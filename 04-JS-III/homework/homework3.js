@@ -106,13 +106,7 @@ function promedioResultadosTest(resultadosTest) {
 
 
 function numeroMasGrande(numeros) {
-  var mayor = numeros[0]
-  for (var i = 1; i < numeros.length; i++) {
-    if (numeros[i] > mayor) {
-    mayor = numeros[i]
-   }
-  }
-   return mayor 
+  var mayor = numeros
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
@@ -120,14 +114,6 @@ function numeroMasGrande(numeros) {
 
 
 function multiplicarArgumentos() {
-  if (arguments.length === 1) return arguments[0]
-  else if (!arguments.length) return 0
-
-  var producto = arguments[0]
-  for (var i = 1; i < arguments.length; i++) {
-    producto *= arguments[i]
-  }
-   return producto
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
@@ -135,13 +121,6 @@ function multiplicarArgumentos() {
 
 
 function cuentoElementos(arreglo){
-  var cantidad = 0
-  for (var i = 0; i < arreglo.length; i++){
-    if (arreglo[i]  > 19) {
-      cantidad++
-    }
-  } 
-  return cantidad 
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 19.
   //Escribe tu código aquí
 
@@ -149,8 +128,6 @@ function cuentoElementos(arreglo){
 
 
 function diaDeLaSemana(numeroDeDia) {
-  if (numeroDeDia === 1 || numeroDeDia === 7) return "Es fin de semana"
-  return "Es dia Laboral"
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
@@ -160,9 +137,6 @@ function diaDeLaSemana(numeroDeDia) {
 
 
 function empiezaConNueve(n) {
-  var str = n.toString()
-   if (str[0] === '9') return true
-   return false 
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
@@ -171,13 +145,6 @@ function empiezaConNueve(n) {
 
 
 function todosIguales(arreglo) {
-  var comparar = arreglo[0]
-  for ( var i = 1; i < arreglo.length; i++) {
-    if ( comparar !== arreglo[i]) {
-      return false
-    }
-  }
-   return true 
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
@@ -186,16 +153,6 @@ function todosIguales(arreglo) {
 
 
 function mesesDelAño(array) {
-  var nuevoArray = []
-  for (var i = 0; i < array.length; i++) {
-    if (array[i]=== "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
-      nuevoArray.push(array[i])
-    }
-  }
-  if (nuevoArray.length === 3) {
-    return nuevoArray 
-  }
-   return "No se encontraron los meses pedidos"
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
@@ -204,13 +161,6 @@ function mesesDelAño(array) {
 
 
 function mayorACien(array) {
-  var nuevoArray = []
-  for (var i = 0; i < array.length; i++) {
-    if (array[i] > 100) {
-      nuevoArray.push(array[i])
-    }
-  }
-  return nuevoArray 
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
@@ -218,18 +168,6 @@ function mayorACien(array) {
 
 
 function breakStatement(numero) {
-  var nuevoArray = []
-  for (var i = 0; i < 10; i++) {
-    numero +=2
-    nuevoArray.push(numero)
-    if (numero === i) {
-      break
-    }
-  }
-   if (numero === i) {
-     return "Se interrumpió la ejecución"
-   }
-  return nuevoArray 
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array. 
   //Devolver el array
@@ -241,19 +179,6 @@ function breakStatement(numero) {
 
 
 function continueStatement(numero) {
-  var arr = []
-  for (var i = 0; i < 10; i++) {
-   if ( i === 5) {
-     continue 
-   }
-    numero += 2
-    arr.push(numero) 
-    
-    }
-    return arr 
-  
-   
-   
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array.    
   //Devolver el array
